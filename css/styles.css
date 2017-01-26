@@ -465,6 +465,7 @@ h1{
   background-image: linear-gradient(90deg, var(--color-progress-idicator) 50%, transparent 50%, transparent), linear-gradient(270deg, var(--color-progress-idicator) 50%, var(--color-progress-circle) 50%, var(--color-progress-circle));
 }
 
+
 @-webkit-keyframes colorload {
   0% {
     opacity: 0;
