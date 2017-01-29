@@ -1,0 +1,153 @@
+@import url(bootstrap.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300");
+.colour-number {
+  background: #fff;
+  padding: 0 4px;
+  color: #000 !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  background: #fff; }
+
+.colour-progress-circle {
+  background: #fff;
+  padding: 0 4px;
+  color: #000 !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  background: #ebebeb; }
+
+.colour-progress-indicator {
+  background: #fff;
+  padding: 0 4px;
+  color: #000 !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  background: #66b8ff; }
+
+.colour-progress-number {
+  background: #fff;
+  padding: 0 4px;
+  color: #000 !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  background: #8b8b8b; }
+
+body {
+  font-family: Open Sans Condensed, sans-serif;
+  font-size: 2.5rem; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+.session, .home, .demo, .como-usar, .custom, .vantagens, .browser-support {
+  padding-bottom: 90px;
+  text-align: center;
+  color: #fff; }
+  .session h3, .home h3, .demo h3, .como-usar h3, .custom h3, .vantagens h3, .browser-support h3 {
+    font-size: 5rem; }
+
+.home {
+  background: #615C85;
+  background-image: url(../img/bg.png);
+  padding-bottom: 40px; }
+  .home img {
+    margin: 75px 0 20px;
+    display: inline-block; }
+  .home h2 {
+    font-size: 3.25rem; }
+  .home .button {
+    display: inline-block;
+    padding: 12px 60px;
+    font-family: Open Sans Condensed, sans-serif;
+    font-size: 2.25rem;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 35px;
+    background: #fa4b24; }
+    .home .button:hover {
+      background: #f9370b; }
+
+.box-circle {
+  text-align: center;
+  padding: 0; }
+  @media (max-width: 480px) {
+    .box-circle {
+      width: 50%; } }
+  @media (max-width: 480px) and (max-width: 380px) {
+    .box-circle {
+      width: 100%; } }
+
+.demo {
+  padding-bottom: 0;
+  color: #615C85; }
+  .demo .browser {
+    padding: 0;
+    background: url(../img/wireframe-browser-content.svg) top center;
+    background-size: 100%; }
+  .demo .browser-head {
+    padding: 0; }
+    .demo .browser-head img {
+      width: 100%; }
+  .demo .browser-content {
+    padding-right: 0;
+    padding-left: 0; }
+
+.sand-box {
+  font-family: monospace;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 9px;
+  border: 2px solid #6b6b6b;
+  background: #fff; }
+  .sand-box .comentario {
+    color: #999; }
+  .sand-box .propriedade {
+    color: #008080; }
+  .sand-box .elemento {
+    color: #000080; }
+  .sand-box .valor {
+    color: #d14; }
+
+.como-usar {
+  background: #8BB901;
+  background-image: url(../img/bg.png); }
+
+.custom {
+  color: #8BB901; }
+
+.vantagens {
+  color: #fff;
+  background: #FB7456;
+  background-image: url(../img/bg.png); }
+
+.browser-support {
+  color: #FB7456;
+  background-image: url(../img/bg.png); }
+  .browser-support ul {
+    list-style: none;
+    padding: 0; }
+    .browser-support ul li {
+      display: inline-block;
+      margin: 50px;
+      color: #615C85; }
+      .browser-support ul li img {
+        width: 64px;
+        height: 64px; }
+      .browser-support ul li span {
+        display: block; }
+
+/*# sourceMappingURL=layout.css.map */

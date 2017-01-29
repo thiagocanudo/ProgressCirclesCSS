@@ -1,0 +1,219 @@
+@import 'bootstrap.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300');
+
+//variaveis
+$fonte-primaria: 'Open Sans', sans-serif;
+$fonte-secundaria: 'Open Sans Condensed', sans-serif;
+
+$purple: #615C85;
+$green: #8BB901;
+$orange: #FB7456;
+$color-button: darken($orange, 10);
+
+$color-highlight-elemento: #000080;
+$color-highlight-propriedade: #008080;
+$color-highlight-valor: #d14; 
+
+
+@mixin borda-arredondada($raio: 5px){
+  border-radius: $raio;
+}
+
+@mixin shadow-padrao{
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);  
+}
+
+@mixin colour{
+  background:#fff;
+  padding:0 4px;
+  color:#000 !important;
+  @include borda-arredondada;
+  @include shadow-padrao;
+}
+
+.colour-number{
+  @include colour;
+  background: #fff;
+}
+
+.colour-progress-circle{
+  @include colour;
+  background: #ebebeb;
+}
+
+.colour-progress-indicator{
+  @include colour;
+  background: #66b8ff;
+}
+
+.colour-progress-number{
+  @include colour;
+  background: #8b8b8b;
+}
+
+body{
+  font-family: #{$fonte-secundaria};
+  font-size: 2.5rem;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.session{
+  padding-bottom: 90px;
+  text-align: center;
+  color: #fff;
+
+  h3{
+    font-size: 5rem;
+  }
+}
+
+.home{
+  background: $purple;
+  background-image: url(../img/bg.png);
+  @extend .session;
+  padding-bottom: 40px;
+
+  img{
+    margin:75px 0 20px;
+    display: inline-block;
+  }
+
+  h2{
+    font-size: 3.25rem;
+  }
+
+  .button{
+    display: inline-block;
+    padding:12px 60px;
+    font-family: #{$fonte-secundaria};
+    font-size: 2.25rem;
+    color:#fff;
+    border:4px solid #fff;
+    @include borda-arredondada(35px);
+    background: $color-button;
+
+    &:hover{
+      background: darken($orange, 15);
+    }
+  }
+
+}
+
+.box-circle{
+  text-align: center;
+  padding: 0;
+
+  @media (max-width: 480px){
+    width: 50%;
+    @media (max-width: 380px){
+      width: 100%;
+    }
+  }
+}
+
+.demo{
+  @extend .session;
+  padding-bottom: 0;
+  color: $purple;
+
+  .browser{
+    padding: 0;
+    background:url(../img/wireframe-browser-content.svg) top center;
+    background-size: 100%;
+  }
+
+  .browser-head{
+    padding: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .browser-content{
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+  .sand-box{
+    font-family: monospace;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #333;
+    padding: 8px 16px;
+    @include borda-arredondada(9px);
+    border:2px solid #6b6b6b;
+    background: #fff; 
+
+    .comentario{
+      color: #999;
+    }
+    .propriedade{
+      color: $color-highlight-propriedade;
+    }
+    .elemento{
+      color: $color-highlight-elemento;
+    }
+    .valor{
+      color: $color-highlight-valor;
+    }
+  }
+
+.como-usar{
+  background: $green;
+
+  @extend .session;
+  background-image: url(../img/bg.png);
+}
+
+.custom{
+  color: $green;
+  @extend .session;
+
+}
+
+.vantagens{
+  color: #fff;
+  background: $orange;
+  @extend .session;
+  background-image: url(../img/bg.png);
+}
+
+
+.browser-support{
+  color: $orange;
+  @extend .session;
+  background-image: url(../img/bg.png);
+
+  ul{
+    list-style: none;
+    padding: 0;
+
+    li{
+      display: inline-block;
+      margin: 50px;
+      color: $purple;
+
+      img{
+        width: 64px;
+        height: 64px;
+      }
+
+      span{
+        display: block;
+      }
+    }
+  }
+
+}
