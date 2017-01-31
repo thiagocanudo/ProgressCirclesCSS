@@ -1,5 +1,5 @@
 @import url(bootstrap.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:400");
 .colour-number {
   background: #fff;
   padding: 0 4px;
@@ -51,12 +51,14 @@ ul {
 a:hover {
   text-decoration: none; }
 
-.session, .home, .demo, .como-usar, .custom, .vantagens, .browser-support {
+.session, .home, .demo, .como-usar, .custom, .vantagens, .browser-support, .rodape {
   padding-bottom: 90px;
   text-align: center;
   color: #fff; }
-  .session h3, .home h3, .demo h3, .como-usar h3, .custom h3, .vantagens h3, .browser-support h3 {
-    font-size: 5rem; }
+  .session h3, .home h3, .demo h3, .como-usar h3, .custom h3, .vantagens h3, .browser-support h3, .rodape h3 {
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: -2.2px; }
 
 .home {
   background: #615C85;
@@ -66,7 +68,8 @@ a:hover {
     margin: 75px 0 20px;
     display: inline-block; }
   .home h2 {
-    font-size: 3.25rem; }
+    font-size: 3.25rem;
+    font-weight: 400; }
   .home .button {
     display: inline-block;
     padding: 12px 60px;
@@ -91,10 +94,11 @@ a:hover {
 
 .demo {
   padding-bottom: 0;
-  color: #615C85; }
+  color: #615C85;
+  background: url("../img/bg-2.png"); }
   .demo .browser {
     padding: 0;
-    background: url(../img/wireframe-browser-content.svg) top center;
+    background: #fff url(../img/wireframe-browser-content.svg) top center;
     background-size: 100%; }
   .demo .browser-head {
     padding: 0; }
@@ -127,7 +131,8 @@ a:hover {
   background-image: url(../img/bg.png); }
 
 .custom {
-  color: #8BB901; }
+  color: #8BB901;
+  background: url("../img/bg-2.png"); }
 
 .vantagens {
   color: #fff;
@@ -136,7 +141,7 @@ a:hover {
 
 .browser-support {
   color: #FB7456;
-  background-image: url(../img/bg.png); }
+  background: url("../img/bg-2.png"); }
   .browser-support ul {
     list-style: none;
     padding: 0; }
@@ -149,5 +154,18 @@ a:hover {
         height: 64px; }
       .browser-support ul li span {
         display: block; }
+
+.rodape {
+  font-size: 17px;
+  color: #fff;
+  background: #353249;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-image: url(../img/bg.png); }
+  .rodape a {
+    color: inherit;
+    border-bottom: 1px dotted #fff; }
+    .rodape a:hover {
+      border-bottom: 1px dashed #fff; }
 
 /*# sourceMappingURL=layout.css.map */

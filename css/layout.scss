@@ -1,5 +1,5 @@
 @import 'bootstrap.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:400');
 
 //variaveis
 $fonte-primaria: 'Open Sans', sans-serif;
@@ -14,6 +14,7 @@ $color-highlight-elemento: #000080;
 $color-highlight-propriedade: #008080;
 $color-highlight-valor: #d14; 
 
+$bg-padrao: "../img/bg-2.png";
 
 @mixin borda-arredondada($raio: 5px){
   border-radius: $raio;
@@ -74,6 +75,8 @@ a:hover{
 
   h3{
     font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: -2.2px;
   }
 }
 
@@ -90,6 +93,7 @@ a:hover{
 
   h2{
     font-size: 3.25rem;
+    font-weight: 400;
   }
 
   .button{
@@ -125,10 +129,11 @@ a:hover{
   @extend .session;
   padding-bottom: 0;
   color: $purple;
+  background: url($bg-padrao);
 
   .browser{
     padding: 0;
-    background:url(../img/wireframe-browser-content.svg) top center;
+    background:#fff url(../img/wireframe-browser-content.svg) top center;
     background-size: 100%;
   }
 
@@ -180,7 +185,7 @@ a:hover{
 .custom{
   color: $green;
   @extend .session;
-
+  background: url($bg-padrao);
 }
 
 .vantagens{
@@ -194,7 +199,7 @@ a:hover{
 .browser-support{
   color: $orange;
   @extend .session;
-  background-image: url(../img/bg.png);
+  background: url($bg-padrao);
 
   ul{
     list-style: none;
@@ -215,5 +220,23 @@ a:hover{
       }
     }
   }
+}
 
+.rodape{
+  font-size: 17px;
+  color: #fff;
+  background: darken($purple, 20);
+  @extend .session;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-image: url(../img/bg.png);
+
+  a{
+    color: inherit;
+    border-bottom: 1px dotted #fff;
+
+    &:hover{
+      border-bottom: 1px dashed #fff;
+    }
+  }
 }
