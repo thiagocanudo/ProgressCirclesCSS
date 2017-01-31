@@ -61,8 +61,7 @@ a:hover {
     letter-spacing: -2.2px; }
 
 .home {
-  background: #615C85;
-  background-image: url(../img/bg.png);
+  background: #615C85 url(../img/bg.png) fixed;
   padding-bottom: 40px; }
   .home img {
     margin: 75px 0 20px;
@@ -127,8 +126,7 @@ a:hover {
     color: #d14; }
 
 .como-usar {
-  background: #8BB901;
-  background-image: url(../img/bg.png); }
+  background: #8BB901 url(../img/bg.png) fixed; }
 
 .custom {
   color: #8BB901;
@@ -137,7 +135,7 @@ a:hover {
 .vantagens {
   color: #fff;
   background: #FB7456;
-  background-image: url(../img/bg.png); }
+  background: #FB7456 url(../img/bg.png) fixed; }
 
 .browser-support {
   color: #FB7456;
@@ -161,7 +159,7 @@ a:hover {
   background: #353249;
   padding-top: 7px;
   padding-bottom: 7px;
-  background-image: url(../img/bg.png); }
+  background-image: url(../img/bg.png) fixed; }
   .rodape a {
     color: inherit;
     border-bottom: 1px dotted #fff; }

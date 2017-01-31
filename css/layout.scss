@@ -81,8 +81,7 @@ a:hover{
 }
 
 .home{
-  background: $purple;
-  background-image: url(../img/bg.png);
+  background: $purple url(../img/bg.png) fixed;
   @extend .session;
   padding-bottom: 40px;
 
@@ -176,10 +175,8 @@ a:hover{
   }
 
 .como-usar{
-  background: $green;
-
   @extend .session;
-  background-image: url(../img/bg.png);
+  background:$green url(../img/bg.png) fixed;
 }
 
 .custom{
@@ -192,7 +189,7 @@ a:hover{
   color: #fff;
   background: $orange;
   @extend .session;
-  background-image: url(../img/bg.png);
+  background:$orange url(../img/bg.png) fixed;
 }
 
 
@@ -229,7 +226,7 @@ a:hover{
   @extend .session;
   padding-top: 7px;
   padding-bottom: 7px;
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.png) fixed;
 
   a{
     color: inherit;
